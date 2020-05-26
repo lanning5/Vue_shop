@@ -7,8 +7,8 @@ module.exports = {
     'plugin:vue/essential',
     '@vue/standard',
     // 新增的
-    "some-other-config-you-use",
-    "prettier"
+    // "some-other-config-you-use",
+    // "prettier"
   ],
   parserOptions: {
     parser: 'babel-eslint'
