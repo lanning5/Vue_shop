@@ -1,7 +1,7 @@
-module.exports ={
-    module: {
-        rules: [
-            {test: /\.less/, use:['style-loader','css-loader','less-load']}
-        ]
-    }
+module.exports = {
+  module: {
+    rules: [
+      { test: /\.less/, use: ['style-loader', 'css-loader', 'less-load'] }
+    ]
+  }
 }

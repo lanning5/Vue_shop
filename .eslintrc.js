@@ -5,10 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-    '@vue/standard',
-    // 新增的
-    "some-other-config-you-use",
-    "prettier"
+    '@vue/standard'
   ],
   parserOptions: {
     parser: 'babel-eslint'
@@ -16,6 +13,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    "eqeqeq":0
-  }
+    "eqeqeq": 0,
+    "semi": 0,
+    'space-before-function-paren': 0
+  },
+  // 'no-unreachable': 0
 }

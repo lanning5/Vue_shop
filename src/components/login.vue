@@ -3,6 +3,7 @@
     <div class="login_box">
       <div class="avatar_box">
         <img src="../assets/logo.png" alt />
+
       </div>
       <!-- 表单区域 -->
       <!-- ref 为了取实例对象 -->
@@ -14,8 +15,8 @@
         </el-form-item>
         <el-form-item prop="password">
           <el-input
-            show-password
-            v-model="lform.password"
+                show-password
+              v-model="lform.password"
             placeholder="请输入密码"
             prefix-icon="el-icon-unlock"
           ></el-input>
