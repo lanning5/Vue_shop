@@ -3,23 +3,17 @@
     <div class="login_box">
       <div class="avatar_box">
         <img src="../assets/logo.png" alt />
-
       </div>
       <!-- 表单区域 -->
       <!-- ref 为了取实例对象 -->
       <!-- :rules="rules"  prop="username" （prop加给item）绑定验证规则-->
       <el-form ref="loginFormRef" :model="lform" class="form_login" :rules="rules">
-          <!-- 输入框区域 -->
+        <!-- 输入框区域 -->
         <el-form-item prop="username">
           <el-input v-model="lform.username" placeholder="请输入账号" prefix-icon="el-icon-user"></el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input
-                show-password
-              v-model="lform.password"
-            placeholder="请输入密码"
-            prefix-icon="el-icon-unlock"
-          ></el-input>
+          <el-input show-password v-model="lform.password" placeholder="请输入密码" prefix-icon="el-icon-unlock"></el-input>
         </el-form-item>
         <!-- 按钮区域 -->
         <el-form-item class="btns">
@@ -34,7 +28,7 @@
 <script>
 // axios.defaults.baseURL = ''
 export default {
-  data () {
+  data() {
     return {
       lform: {
         username: 'admin',
@@ -52,23 +46,27 @@ export default {
   },
   methods: {
     // 重置表单
-    resetLogin () {
+    resetLogin() {
       // console.log(this.$refs.loginFormRef);
       // this.$refs.loginFormRef 取表单的实例，表单中设有ref属性
       this.$refs.loginFormRef.resetFields()
     },
-    login () {
+    login() {
       // validate 是form表单预验证，接受一个回调函数（参数为验证返回的布尔值）
-      this.$refs.loginFormRef.validate(async (valid) => {
+      this.$refs.loginFormRef.validate(async valid => {
         console.log(valid)
         // 验证成功
         if (valid) {
-          console.log(this.lform)
           // 解构返回对象里的data
+          console.log('sss')
+
           const { data: res } = await this.$http.post('login', this.lform)
+          console.log(res, 'ssss')
           // element-ui 的消息弹窗  this.$message(已挂载到Vue.prototype)
           if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
           // 成功登录
+          console.log(res)
+
           this.$message.success('登录成功')
           // 1. 将登录成功之后的 token 保存到客户端的sessionStorage 中
           //      1.1. 项目中除了登录之外的其它API接口，必须在登录之后才能访问
