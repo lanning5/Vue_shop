@@ -8,7 +8,7 @@ import rights from './components/power/rights.vue'
 import roles from './components/power/roles.vue'
 import goods from './components/goods/goods.vue'
 import params from './components/goods/params.vue'
-import categories from './components/categories.vue'
+import categories from './components/goods/categories.vue'
 import orders from './components/orders.vue'
 import reports from './components/reports.vue'
 
