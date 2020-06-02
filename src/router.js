@@ -7,6 +7,7 @@ import users from './components/user/users.vue'
 import rights from './components/power/rights.vue'
 import roles from './components/power/roles.vue'
 import goods from './components/goods/goods.vue'
+import addGoods from './components/goods/add.vue'
 import params from './components/goods/params.vue'
 import categories from './components/goods/categories.vue'
 import orders from './components/orders.vue'
@@ -27,6 +28,7 @@ const router = new Router({
         { path: '/rights', component: rights },
         { path: '/roles', component: roles },
         { path: '/goods', component: goods },
+        { path: '/goods/add', component: addGoods },
         { path: '/params', component: params },
         { path: '/categories', component: categories },
         { path: '/orders', component: orders },

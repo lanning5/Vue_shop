@@ -28,3 +28,9 @@ body,
 .el-cascader-panel .el-radio__input {
   visibility: hidden;
 }
+.el-upload-list__item-name{
+  text-align: left;
+}
+.ql-editor {
+  min-height: 200px;
+}

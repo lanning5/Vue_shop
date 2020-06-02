@@ -302,4 +302,7 @@ export default {
   margin-left: 10px;
   vertical-align: bottom;
 }
+.el-card{
+  margin-top: 25px;
+}
 </style>
