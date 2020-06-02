@@ -11,7 +11,7 @@ import addGoods from './components/goods/add.vue'
 import params from './components/goods/params.vue'
 import categories from './components/goods/categories.vue'
 import orders from './components/order/orders.vue'
-import reports from './components/reports.vue'
+import reports from './components/report/reports.vue'
 
 Vue.use(Router)
 const router = new Router({
