@@ -10,7 +10,7 @@ import goods from './components/goods/goods.vue'
 import addGoods from './components/goods/add.vue'
 import params from './components/goods/params.vue'
 import categories from './components/goods/categories.vue'
-import orders from './components/orders.vue'
+import orders from './components/order/orders.vue'
 import reports from './components/reports.vue'
 
 Vue.use(Router)
