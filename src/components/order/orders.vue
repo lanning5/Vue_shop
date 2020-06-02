@@ -13,7 +13,7 @@
       <el-input class="seleInput" clearable placeholder="请输入内容" v-model="inputVal">
         <el-button slot="append" icon="el-icon-search" @click="searchGoods"></el-button>
       </el-input>
-
+      <!-- 测试提示 -->
       <!-- 表格区域 -->
       <el-table :data="orderList" border>
         <el-table-column type="index" label="#"></el-table-column>
